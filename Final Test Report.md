@@ -66,11 +66,6 @@
 - Mobile browser testing
 
 - Backend/database testing (no server-side logic)
-
-### Tools & Resources
-
-- Great question, Ojutiwon! As the **Test Manager**, you're expected to define the tools and resources your team will use to plan, execute, and report testing activities. Here's a tailored section you can include in your report:
-
 ---
 
 ## 🛠 Test Tools & Resources
@@ -96,12 +91,16 @@
 | **Test Cases Document** | List of test scenarios and expected outcomes |
 | **Final Report Template** | Provided by PLP for Week 5 QA submission |
 | **Course Materials** | Week 5 module on Test Management for guidance |
-
+---
 ### Schedule
 
 | Phase | Planned Duration | Actual Duration | Status |
 |-------|------------------|-----------------|--------|
-| | | | |
+| test plannimg | one day | 4 hours |completed |
+| test design | one day | 5 hours  | completed |
+| test execution |one day | |prnding |
+| defect reporting | | | |
+| final repoerting | | | |
 
 ## Risk Analysis
 
