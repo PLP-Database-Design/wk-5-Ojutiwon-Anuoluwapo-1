@@ -166,7 +166,7 @@
 
 | Name | Role | Initials | Date |
 |------|------|-----------|------|
-| | Test Manager | | |
+| Ojutiwon Anuoluwapo Mautin | Test Manager | Anu | |
 | | Risk Analyst | | |
 | | Test Executor | | |
 
