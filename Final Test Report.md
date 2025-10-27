@@ -47,7 +47,20 @@
 ### Scope
 
 **In Scope:**
-- 
+- 1. Reset Game Button
+  Does it clear the board properly?
+  Does it reset the score and timer?
+
+- 2. Leaderboard Feature
+  Is the score saved correctly in localStorage?
+  Does it show the top scores in the right order?
+
+- 3. Bonus Round
+  Does the multiplier apply correctly?
+  Is the bonus triggered at the right time?
+- 4. UI/UX on Chrome Desktop
+  Are buttons clickable?
+  Is the layout responsive and readable?
 
 **Out of Scope:**
 - Mobile browser testing
@@ -56,7 +69,33 @@
 
 ### Tools & Resources
 
-- 
+- Great question, Ojutiwon! As the **Test Manager**, you're expected to define the tools and resources your team will use to plan, execute, and report testing activities. Here's a tailored section you can include in your report:
+
+---
+
+## 🛠 Test Tools & Resources
+
+### 🔧 Tools
+
+| Tool | Purpose |
+|------|---------|
+| **Google Chrome (Desktop)** | Primary browser for executing and validating tests |
+| **GitHub Issues** | Defect logging, tracking, and collaboration |
+| **Markdown (.md files)** | Writing test plans, reports, and documenting results |
+| **Screenshots & Snipping Tool** | Capturing evidence of test execution and defects |
+| **LocalStorage Inspector (Chrome DevTools)** | Verifying leaderboard data persistence |
+| **VS Code / Text Editor** | Reviewing HTML source code |
+| **GitHub Project Board (optional)** | Organizing tasks, assigning roles, tracking progress |
+
+### 📚 Resources
+
+| Resource | Description |
+|----------|-------------|
+| **System Under Test (SUT)** | Word Puzzle Game Plus deployed in Chrome |
+| **Team Members** | Test Manager, Risk Analyst, Test Executor |
+| **Test Cases Document** | List of test scenarios and expected outcomes |
+| **Final Report Template** | Provided by PLP for Week 5 QA submission |
+| **Course Materials** | Week 5 module on Test Management for guidance |
 
 ### Schedule
 
