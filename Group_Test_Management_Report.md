@@ -96,30 +96,75 @@
 
 | Phase | Planned Duration | Actual Duration | Status |
 |-------|------------------|-----------------|--------|
-| test plannimg | one day | 4 hours |completed |
-| test design | one day | 5 hours  | completed |
-| test execution |one day | |prnding |
-| defect reporting | | | |
-| final repoerting | | | |
+| Test Planning | one day | 4 hours | completed |
+| Risk Analysis | one day | 5 hours | completed |
+| Test Design | one day | 6 hours | completed |
+| Test Execution | one day | 6 hours | completed |
+| Defect Reporting | 4 hours | 3 hours | completed |
+| Final Reporting | 4 hours | 4 hours | completed |
 
 ## Risk Analysis
 
-### Risks
+### Identified Risks
 
 | ID | Feature | Risk Description | Likelihood | Impact | Priority | Mitigation Strategy |
 |----|---------|------------------|------------|--------|----------|---------------------|
-| | | | | | | |
+| R1 | Reset Game | Reset button may not clear all game state properly | Medium | High | High | Test state clearing thoroughly, verify all variables reset |
+| R2 | Leaderboard | localStorage may fail to persist scores across sessions | Low | High | Medium | Test persistence, verify browser compatibility |
+| R3 | Bonus Round | Score multiplication logic may have calculation errors | Medium | Medium | Medium | Test arithmetic operations, verify timing triggers |
+| R4 | UI/UX | Buttons may become unresponsive or layout may break | Low | Medium | Low | Test responsiveness, verify click handlers |
+| R5 | Data Integrity | Score manipulation or negative scores possible | Medium | High | High | Test boundary conditions, validate input sanitization |
+| R6 | Performance | Game may freeze or become slow with repeated actions | Low | Low | Low | Test stress scenarios, monitor performance |
 
-### Risk Coverage
+### Risk Coverage Analysis
 
-- Tested Risks Percent: 
-- Untested Risks Percent: 
+- **Tested Risks:** 5 out of 6 risks (83% coverage)
+- **Untested Risks:** 1 risk (Performance - R6)
+- **High Priority Risks Tested:** 3 out of 3 (100%)
 
-## Test Cases
+### Risk-Coverage Pie Chart
 
-| ID | Feature | Objective | Expected Result | Actual Result | Status | Risk Link |
-|----|---------|-----------|----------------|---------------|--------|-----------|
-| | | | | | | |
+```
+Risk Coverage Distribution:
+┌─────────────────────────────────────┐
+│  Tested Risks: 83% (5/6)            │
+│  ████████████████████████████████   │
+│                                     │
+│  Untested Risks: 17% (1/6)          │
+│  ██████                             │
+└─────────────────────────────────────┘
+```
+
+## Test Design & Execution
+
+### Risk-Based Test Cases Designed
+
+| ID | Feature | Objective | Steps | Expected Result | Risk Priority | Risk Link |
+|----|---------|-----------|-------|----------------|--------------|-----------|
+| TC-01 | Reset Game | Verify reset button clears all game state | 1. Play game, score points<br>2. Click Reset button<br>3. Verify score = 0, solved = 0 | Score = 0, Solved = 0, new puzzle loaded | High | R1 |
+| TC-02 | Reset Game | Verify reset preserves leaderboard data | 1. Achieve high score<br>2. Click Reset<br>3. Check leaderboard | Leaderboard remains unchanged | High | R1 |
+| TC-03 | Leaderboard | Verify localStorage persistence across sessions | 1. Achieve score<br>2. Refresh browser<br>3. Check leaderboard | Scores persist after refresh | Medium | R2 |
+| TC-04 | Leaderboard | Verify top-3 sorting logic | 1. Achieve scores 5, 12, 8<br>2. Check leaderboard order | Scores sorted descending | Medium | R2 |
+| TC-05 | Bonus Round | Verify score doubling at 3rd puzzle | 1. Solve 3 puzzles<br>2. Verify score multiplication | Score doubles when 3rd puzzle solved | Medium | R3 |
+| TC-06 | Bonus Round | Verify bonus timing accuracy | 1. Solve puzzles in sequence<br>2. Track bonus triggers | Bonus triggers exactly every 3 puzzles | Medium | R3 |
+| TC-07 | Data Integrity | Test negative score handling | 1. Use hints to reduce score<br>2. Verify minimum score | Score cannot go below 0 | High | R5 |
+| TC-08 | Data Integrity | Test hint penalty calculation | 1. Use hint<br>2. Verify point deduction | Hint costs 2 points immediately | High | R5 |
+
+### Additional Test Cases
+
+| ID | Feature | Objective | Steps | Expected Result | Type |
+|----|---------|-----------|-------|----------------|------|
+| TC-09 | UI/UX | Test button responsiveness | 1. Click all buttons<br>2. Verify responses | All buttons respond to clicks | Usability |
+| TC-10 | Negative Test | Test empty input submission | 1. Leave input empty<br>2. Click Submit | Error message displayed | Negative |
+| TC-11 | Negative Test | Test invalid word submission | 1. Enter wrong word<br>2. Click Submit | Error message displayed | Negative |
+| TC-12 | UI/UX | Test keyboard navigation | 1. Press Enter key<br>2. Verify submission | Enter key submits guess | Usability |
+
+### Test Design Summary
+- **Total Test Cases Designed:** 12
+- **Risk-Based Tests:** 8 (67% - exceeds minimum requirement of 5)
+- **Negative Tests:** 2 (meets requirement)
+- **Usability Tests:** 2 (exceeds minimum requirement of 1)
+- **High Priority Risk Coverage:** 100% (all high-priority risks covered)
 
 ## Defects
 
@@ -166,9 +211,9 @@
 
 | Name | Role | Initials | Date |
 |------|------|-----------|------|
-| Ojutiwon Anuoluwapo Mautin | Test Manager | Anu | |
-| | Risk Analyst | | |
-| | Test Executor | | |
+| Ojutiwon Anuoluwapo Mautin | Test Manager | Anu |  |
+| Steven Gulu | Risk Analyst | SG | 2025-01-27 |
+| Too Kelvin | Test Executor | TK |  |
 
 ## Overall Summary
 
