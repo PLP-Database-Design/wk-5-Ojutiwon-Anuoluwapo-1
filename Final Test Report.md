@@ -12,8 +12,8 @@
 | Role | Name | Responsibilities |
 |------|------|------------------|
 | Test Manager | Ojutiwon Anuoluwapo Mautin | Planning, scheduling, coordination, metric tracking |
-| Risk Analyst | Steven Gulu | Risk identification, prioritization, test design linkage |
-| Test Executor | Too Kelvin| Execution, evidence capture, defect logging |
+| Risk Analyst | Too Kelvin | Risk identification, prioritization, test design linkage |
+| Test Executor | Steven Gulu| Execution, evidence capture, defect logging |
 
 ## Group Rules
 
