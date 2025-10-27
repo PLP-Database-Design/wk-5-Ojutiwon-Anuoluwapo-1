@@ -11,9 +11,9 @@
 
 | Role | Name | Responsibilities |
 |------|------|------------------|
-| Test Manager | | Planning, scheduling, coordination, metric tracking |
-| Risk Analyst | | Risk identification, prioritization, test design linkage |
-| Test Executor | | Execution, evidence capture, defect logging |
+| Test Manager | Ojutiwon Anuoluwapo Mautin | Planning, scheduling, coordination, metric tracking |
+| Risk Analyst | Steven Gulu | Risk identification, prioritization, test design linkage |
+| Test Executor | Too Kelvin| Execution, evidence capture, defect logging |
 
 ## Group Rules
 
@@ -38,8 +38,11 @@
 ## Test Plan
 
 ### Objectives
+- Ensure all core features (Reset Game, Leaderboard, Bonus Round) function as expected.
 
-- 
+- Validate usability, responsiveness, and data persistence in Chrome (Desktop).
+
+- Identify and log defects, risks, and usability issues for resolution.
 
 ### Scope
 
@@ -47,7 +50,9 @@
 - 
 
 **Out of Scope:**
-- 
+- Mobile browser testing
+
+- Backend/database testing (no server-side logic)
 
 ### Tools & Resources
 
