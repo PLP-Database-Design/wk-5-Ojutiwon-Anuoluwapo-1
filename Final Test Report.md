@@ -11,9 +11,9 @@
 
 | Role | Name | Responsibilities |
 |------|------|------------------|
-| Test Manager | | Planning, scheduling, coordination, metric tracking |
-| Risk Analyst | | Risk identification, prioritization, test design linkage |
-| Test Executor | | Execution, evidence capture, defect logging |
+| Test Manager | Ojutiwon Anuoluwapo Mautin | Planning, scheduling, coordination, metric tracking |
+| Risk Analyst | Steven Gulu | Risk identification, prioritization, test design linkage |
+| Test Executor | Too Kelvin| Execution, evidence capture, defect logging |
 
 ## Group Rules
 
@@ -38,26 +38,69 @@
 ## Test Plan
 
 ### Objectives
+- Ensure all core features (Reset Game, Leaderboard, Bonus Round) function as expected.
 
-- 
+- Validate usability, responsiveness, and data persistence in Chrome (Desktop).
+
+- Identify and log defects, risks, and usability issues for resolution.
 
 ### Scope
 
 **In Scope:**
-- 
+- 1. Reset Game Button
+  Does it clear the board properly?
+  Does it reset the score and timer?
+
+- 2. Leaderboard Feature
+  Is the score saved correctly in localStorage?
+  Does it show the top scores in the right order?
+
+- 3. Bonus Round
+  Does the multiplier apply correctly?
+  Is the bonus triggered at the right time?
+- 4. UI/UX on Chrome Desktop
+  Are buttons clickable?
+  Is the layout responsive and readable?
 
 **Out of Scope:**
-- 
+- Mobile browser testing
 
-### Tools & Resources
+- Backend/database testing (no server-side logic)
+---
 
-- 
+## 🛠 Test Tools & Resources
 
+### 🔧 Tools
+
+| Tool | Purpose |
+|------|---------|
+| **Google Chrome (Desktop)** | Primary browser for executing and validating tests |
+| **GitHub Issues** | Defect logging, tracking, and collaboration |
+| **Markdown (.md files)** | Writing test plans, reports, and documenting results |
+| **Screenshots & Snipping Tool** | Capturing evidence of test execution and defects |
+| **LocalStorage Inspector (Chrome DevTools)** | Verifying leaderboard data persistence |
+| **VS Code / Text Editor** | Reviewing HTML source code |
+| **GitHub Project Board (optional)** | Organizing tasks, assigning roles, tracking progress |
+
+### 📚 Resources
+
+| Resource | Description |
+|----------|-------------|
+| **System Under Test (SUT)** | Word Puzzle Game Plus deployed in Chrome |
+| **Team Members** | Test Manager, Risk Analyst, Test Executor |
+| **Test Cases Document** | List of test scenarios and expected outcomes |
+| **Final Report Template** | Provided by PLP for Week 5 QA submission |
+| **Course Materials** | Week 5 module on Test Management for guidance |
+---
 ### Schedule
 
 | Phase | Planned Duration | Actual Duration | Status |
 |-------|------------------|-----------------|--------|
-| | | | |
+| test plannimg | one day | 4 hours |completed |
+| test design | one day | 5 hours  | completed |
+| test execution |one day | |prnding |
+| defect reporting | | | |
+| final repoerting | | | |
 
 ## Risk Analysis
 
@@ -69,33 +112,34 @@
 
 ### Risk Coverage
 
-- Tested Risks Percent: 
-- Untested Risks Percent: 
+- Tested Risks Percent: 83%
+- Untested Risks Percent: 17
 
 ## Test Cases
 
 | ID | Feature | Objective | Expected Result | Actual Result | Status | Risk Link |
-|----|---------|-----------|----------------|---------------|--------|-----------|
+|----|---------|-----------|----------------|---------------|--------|------------|
 | | | | | | | |
 
 ## Defects
 
 | ID | Issue Title | Severity | Risk ID | Status | GitHub Link |
-|----|-------------|----------|---------|--------|-------------|
-| | | | | | |
+|TC-07|Minimum scores go below zero|High|R5|New|(https://github.com/PLP-Database-Design/wk-5-Ojutiwon-Anuoluwapo-1/issues/3)|
+|TC-01 | New puzzle isn't loaded after game reset|Low |R1 |New|https://github.com/PLP-Database-Design/wk-5-Ojutiwon-Anuoluwapo-1/issues/4|
+|TC-09|Submit button become unresponsive when guesses are constantly submitted|Medium|New|https://github.com/PLP-Database-Design/wk-5-Ojutiwon-Anuoluwapo-1/issues/5
 
 ## Metrics
 
-- Test Case Pass Percent: 
-- Defect Density: 
-- Risk Coverage Percent: 
-- Regression Success Rate: 
+- Test Case Pass Percent: 75%
+- Defect Density: Low
+- Risk Coverage Percent: 83%
+- Regression Success Rate: N\A
 
 ### Defect Summary
 
-- Total Defects Logged: 
-- Critical High: 
-- Fix Rate: 
+- Total Defects Logged: 3
+- Critical High: 1
+- Fix Rate: 0%
 
 ## Test Control & Project Management
 
@@ -123,7 +167,7 @@
 
 | Name | Role | Initials | Date |
 |------|------|-----------|------|
-| | Test Manager | | |
+| Ojutiwon Anuoluwapo Mautin | Test Manager | Anu | |
 | | Risk Analyst | | |
 | | Test Executor | | |
 
