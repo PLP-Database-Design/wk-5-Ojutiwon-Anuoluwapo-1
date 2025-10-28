@@ -190,34 +190,43 @@ Risk Coverage Distribution:
 
 ### Phases
 
-| Phase | Deliverable | Actual Output | Variance | Owner |
-|-------|-------------|---------------|----------|-------|
-| | | | | |
+| **Phase** | **Deliverable** | **Actual Output** | **Variance** | **Owner** |
+|------------|-----------------|-------------------|---------------|------------|
+| **Test Planning** | Test Plan Document | Defined scope, objectives, and schedule | None | **Anu** |
+| **Risk Analysis** | Risk Matrix | 6 identified risks with priority levels | None | **Steven** |
+| **Test Design** | Test Case Document | 12 Test Cases | None | **Anu** |
+| **Test Execution** | Execution Report | 10 Passed, 2 Failed | None | **Kelvin** |
+| **Defect Reporting** | GitHub Issues Log | 2 Defects Logged (D1, D2) | None | **Kelvin** |
+| **Final Reporting** | Consolidated Test Report | Submitted on 2025-10-28 | None | **All** |
 
 **Progress Tracking Method:**  
+GitHub Project Board  
+
 **Change Control Notes:**
 
 ## Lessons Learned
 
-- Most Defect Prone Feature: 
-- Risk Analysis Impact: 
-- Team Communication Effectiveness: 
-- Improvements for Next Cycle: 
+Most Defect-Prone Feature: Reset Game
+Impact of Risk Analysis: Helped prioritize test coverage effectively.
+Team Communication: Excellent; issues tracked clearly on GitHub.
+Improvements:
+Add automated tests for repetitive validation.
+Include mobile browser in future cycles.
 
 ## Attachments
 
-- 
 
 ## Sign Off
 
 | Name | Role | Initials | Date |
 |------|------|-----------|------|
-| Ojutiwon Anuoluwapo Mautin | Test Manager | Anu |  |
+| Ojutiwon Anuoluwapo Mautin | Test Manager | A.O |  |
 | Steven Gulu | Risk Analyst | SG | 2025-01-27 |
 | Too Kelvin | Test Executor | TK |  |
 
 ## Overall Summary
 
 **Statement:** 
+Testing for Word Puzzle Game Plus was successfully completed with 83% test pass rate and full coverage of all high-priority risks. The team collaborated effectively to ensure functionality, usability, and reliability of the game features within the defined scope.
 
-**Test Status:** ☐ Completed / ☐ In Progress / ☐ Deferred
+**Test Status:** ✅ Completed / ☐ In Progress / ☐ Deferred
