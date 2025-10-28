@@ -112,33 +112,34 @@
 
 ### Risk Coverage
 
-- Tested Risks Percent: 
-- Untested Risks Percent: 
+- Tested Risks Percent: 83%
+- Untested Risks Percent: 17
 
 ## Test Cases
 
 | ID | Feature | Objective | Expected Result | Actual Result | Status | Risk Link |
-|----|---------|-----------|----------------|---------------|--------|-----------|
+|----|---------|-----------|----------------|---------------|--------|------------|
 | | | | | | | |
 
 ## Defects
 
 | ID | Issue Title | Severity | Risk ID | Status | GitHub Link |
-|----|-------------|----------|---------|--------|-------------|
-| | | | | | |
+|TC-07|Minimum scores go below zero|High|R5|New|(https://github.com/PLP-Database-Design/wk-5-Ojutiwon-Anuoluwapo-1/issues/3)|
+|TC-01 | New puzzle isn't loaded after game reset|Low |R1 |New|https://github.com/PLP-Database-Design/wk-5-Ojutiwon-Anuoluwapo-1/issues/4|
+|TC-09|Submit button become unresponsive when guesses are constantly submitted|Medium|New|https://github.com/PLP-Database-Design/wk-5-Ojutiwon-Anuoluwapo-1/issues/5
 
 ## Metrics
 
-- Test Case Pass Percent: 
-- Defect Density: 
-- Risk Coverage Percent: 
-- Regression Success Rate: 
+- Test Case Pass Percent: 75%
+- Defect Density: Low
+- Risk Coverage Percent: 83%
+- Regression Success Rate: N\A
 
 ### Defect Summary
 
-- Total Defects Logged: 
-- Critical High: 
-- Fix Rate: 
+- Total Defects Logged: 3
+- Critical High: 1
+- Fix Rate: 0%
 
 ## Test Control & Project Management
 
