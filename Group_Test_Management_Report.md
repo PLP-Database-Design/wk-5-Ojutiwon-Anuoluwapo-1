@@ -212,7 +212,7 @@ Risk Coverage Distribution:
 
 | Name | Role | Initials | Date |
 |------|------|-----------|------|
-| Ojutiwon Anuoluwapo Mautin | Test Manager | Anu |  |
+| Ojutiwon Anuoluwapo Mautin | Test Manager | AO |2025-10-28 |
 | Steven Gulu | Risk Analyst | SG | 2025-01-27 |
 | Too Kelvin | Test Executor | TK | 2025-10-28 |
 
